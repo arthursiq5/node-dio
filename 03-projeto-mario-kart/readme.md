@@ -80,7 +80,7 @@
 
 <b>Jogadores:</b>
 
-<input type="checkbox" id="jogadores-item" />
+<input type="checkbox" id="jogadores-item" checked />
 <label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
 
 <b>Pistas:</b>
