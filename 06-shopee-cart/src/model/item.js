@@ -8,4 +8,10 @@ export default class Item {
     subtotal() {
         return this.valor * this.quantidade;
     }
+
+    reduzirQuantidade() {
+        if (this.quantidade >= 1) {
+            this.quantidade--;
+        }
+    }
 }
