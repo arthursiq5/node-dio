@@ -1,4 +1,4 @@
-import { addItem, calculateTotal } from "./services/cart.js";
+import { addItem, calculateTotal, deleteItem, removeItem } from "./services/cart.js";
 import createItem from "./services/item.js";
 
 const cart = []
@@ -10,5 +10,9 @@ const item2 = await createItem('hotwheels lamborghini', 39.99, 3)
 
 await addItem(cart, item1)
 await addItem(cart, item2)
+
+console.log(await calculateTotal(cart));
+
+await deleteItem(cart, item1.nome)
 
 console.log(await calculateTotal(cart));
