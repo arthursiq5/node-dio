@@ -1,4 +1,4 @@
-import { connectToDatabase, disconnectDatabase } from "./utils/database.js";
+import * as database from "./utils/database.js";
 
-await connectToDatabase('teste')
-await disconnectDatabase()
+await database.connectToDatabase('teste')
+await database.disconnectDatabase()
